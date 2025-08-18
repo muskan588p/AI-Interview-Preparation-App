@@ -4,11 +4,7 @@ import Interview from "../models/interview";
 export const createQuestion = async (req, res) => {
   try {
     const { interviewid, question, generated_by, topic, difficulty } = req.body;
-    // const text = await Question.create({
-    //   question,
-    //   topic,
-    //   difficulty,
-    // });
+    
     const interview=await Interview.findOne({id:interview, user:req.user._id});
     if (!interview) {
       return res.status(404).json({ error: 'Interview not found' });

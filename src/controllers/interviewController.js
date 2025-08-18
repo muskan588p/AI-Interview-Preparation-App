@@ -1,4 +1,4 @@
-import Interview from "../models/interview";
+import Interview from "../models/interview.js";
 
 export const createInterview = async (req, res) => {
   try {

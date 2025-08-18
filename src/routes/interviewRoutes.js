@@ -1,6 +1,6 @@
 import {Router} from 'express';
-import { requireAuth } from '../middleware/authMiddleware';
-import { createInterview,listInterviews } from '../controllers/interviewController';
+import { requireAuth } from '../middleware/authMiddleware.js';
+import { createInterview,listInterviews } from '../controllers/interviewController.js';
 
 
 const router=Router();
