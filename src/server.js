@@ -2,7 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 // import mongoose from 'mongoose';
 import cors from 'cors';
-import { connectDb } from './config.js';
+import { connectDb } from './config/db.js';
 
 const app = express();
 connectDb();    
