@@ -12,18 +12,17 @@ const answerSchema = new mongoose.Schema({
         ref: 'Question',
         index: true
     },
-    user_answer: {
+    user_response: {
         type: String,
         required: true,
     },
     score: {
         type: Number,
         min:0,
-        max: 10,
+        max: 100,
     },
     feedback: {
         type: String,
-        default: '',
     },
 }, {
     timestamps: true

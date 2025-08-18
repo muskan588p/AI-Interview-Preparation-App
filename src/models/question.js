@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const questionSchema = new mongoose.Schema({
-    interview:{
+    interviewid:{
         type:mongoose.Schema.Types.ObjectId,
         ref: 'Interview',
         index: true

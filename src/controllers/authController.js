@@ -1,5 +1,7 @@
 import jwt from 'jsonwebtoken';
 import User from '../models/user.js';
+import jwt from 'jsonwebtoken';
+
 
 export const register = async (req, res) => {
   try {
@@ -33,3 +35,4 @@ export const login = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
