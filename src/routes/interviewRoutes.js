@@ -1,8 +1,10 @@
 import {Router} from 'express';
+import { requireAuth } from '../middleware/authMiddleware';
 import { createInterview,listInterviews } from '../controllers/interviewController';
 
+
 const router=Router();
-router.post('/',createInterview);
-router.get('/',listInterviews);
+router.post('/',requireAuth,createInterview);
+router.get('/',requireAuth,listInterviews);
 
 export default router;
