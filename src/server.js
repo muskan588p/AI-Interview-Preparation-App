@@ -1,6 +1,8 @@
 import 'dotenv/config';
 import express from 'express';
 // import mongoose from 'mongoose';
+import passport from 'passport';
+import './config/passport.js'; // Ensure passport is configured
 import cors from 'cors';
 import { connectDb } from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
@@ -11,6 +13,7 @@ import answerRoutes from './routes/answerRoutes.js';
 const app = express();
 connectDb();    
 
+app.use(passport.initialize());
 
 app.use(cors());
 app.use(express.json());
