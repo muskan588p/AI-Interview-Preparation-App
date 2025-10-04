@@ -36,10 +36,9 @@ This platform provides a personalized learning experience with interactive inter
    ```bash
    git clone https://github.com/<your-username>/ai-interview-prep.git
    ## 🛠️ Installation & Setup
-
-### 1. Navigate to the project directory
+2. **Navigate to the project directory**
 ```bash
-cd ai-interview-prep
+   cd ai-interview-prep
 ### Install dependencies
 # Frontend
 cd client
@@ -49,13 +48,15 @@ npm install
 cd ../server
 npm install
 
-3. Configure environment variables
+3. **Configure environment variables**
+```bash
 Create a .env file inside the server folder and add the following:
 PORT=5000
 MONGO_URI=your_mongo_database_uri
 JWT_SECRET=your_secret_key
 OPENAI_API_KEY=your_openai_api_key
-4. Run the application
+
+4. **Run the application**
 # Start backend
 cd server
 npm start
