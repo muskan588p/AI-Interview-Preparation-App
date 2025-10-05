@@ -12,7 +12,8 @@ export const createInterview = async (req, res) => {
 
 export const listInterviews = async (req, res) => {
   try {
-    const doc = await Interview.find({user: req.user._id}).sort({ date: -1 });
+    const doc = await Intervie
+    w.find({user: req.user._id}).sort({ date: -1 });
     res.json(doc);
   } catch (error) {
     res.status(500).json({ error: error.message });

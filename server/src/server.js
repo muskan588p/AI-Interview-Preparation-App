@@ -34,3 +34,14 @@ const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+
+// function create(){
+//   let counter=[];
+//   for(var i=0;i<3;i++){
+//     counter.push(function());
+//   }
+//   return counter;
+// }
+// const [c1, c2, c3]=create();
+// console.log(c1(), c2(), c3()); // This will log the same function reference three times
