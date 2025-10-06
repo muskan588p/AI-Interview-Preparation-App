@@ -1,8 +1,8 @@
 // Dashboard.js
 import React, { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-// import { getInterviews } from '../../api/api';
-// import { AuthContext } from '../../context/AuthContext';
+import { getInterviews } from '../../api/api';
+import { AuthContext } from '../../context/authcontext';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
 import './dashboard.css';

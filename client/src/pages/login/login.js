@@ -1,8 +1,8 @@
 // Login.js
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { login as loginApi } from '../../api/api';
-// import { AuthContext } from '../../context/AuthContext';
+import { login as loginApi } from '../../api/api';
+import { AuthContext } from '../../context/authcontext';
 import './login.css';
 
 const Login = () => {
